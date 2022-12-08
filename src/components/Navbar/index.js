@@ -1,6 +1,8 @@
 import React from 'react';
-import {FaBars} from 'react-icons/fa';
-import{Nav,NavbarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink} from './NavbarElements';
+import { FaBars } from 'react-icons/fa';
+import { NavLink, Route, Router } from 'react-router-dom';
+import { Routes } from 'react-router-dom/dist';
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements';
 
 
 const Navbar = ({toggle}) => {
@@ -14,16 +16,13 @@ const Navbar = ({toggle}) => {
             </MobileIcon>
             <NavMenu>
                 <NavItem>
-                    <NavLinks to='about'>About</NavLinks>
+                    <NavLinks to='home'>Home</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <NavLinks to='discover'>Discover</NavLinks>
+                    <NavLinks to='catalog'>Catalog</NavLinks>
                 </NavItem>
                 <NavItem>
-                    <NavLinks to='services'>Services</NavLinks>
-                </NavItem>
-                <NavItem>
-                    <NavLinks to='signup'>Sign Up</NavLinks>
+                    <NavLinks to='cart'>Cart</NavLinks>
                 </NavItem>
             </NavMenu>
             <NavBtn>
